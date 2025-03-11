@@ -20,7 +20,7 @@ void calculateMileage(double i, double f){
     
 
     //Prints out the miles traveled
-    cout << "Total miles traveled: " << traveledMiles;
+    cout << "Total miles traveled: " << traveledMiles << endl;
 }
 //Mileage Tracker
 void MileageTracker(){

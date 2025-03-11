@@ -1,0 +1,2 @@
+Error: A negative mileage value is not allowed!
+Error: A starting value of a higher number is not allowed!
