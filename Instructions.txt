@@ -1,0 +1,47 @@
+Set up your environment in GitHub Codespaces.
+Open your repository in GitHub.
+Click on "Code" and select "Codespaces".
+Create a new Codespace and open it.
+Ensure that a C++ compiler (g++) is installed.
+Create a new C++ project
+Open a terminal in Codespaces.
+Create a directory for your project: mkdir TripMileageTracker.
+Navigate into the directory: cd TripMileageTracker.
+Initialize a Git repository: git init.
+Create a C++ file: touch TripMileageTracker.cpp.
+Step 1: Implement User Input Handling
+Use cin to take user input.
+Prompt the user to enter their starting mileage and destination mileage.
+Store these values in appropriate variables.
+Step 2: Calculate Miles Traveled
+Compute the total miles traveled using the difference between the starting and destination mileage.
+Display the calculated miles to the user.
+Step 3: Implement Exception Handling for Invalid Mileage
+If the user enters a starting mileage greater than the destination mileage, throw an exception.
+Use a try/catch block to handle invalid mileage entries.
+Display an error message and prompt the user to re-enter values.
+Step 4: Implement Exception Handling for Negative Inputs
+If the user enters negative mileage values, throw an exception.
+Use a try/catch block to ensure only valid mileage is accepted.
+Step 5: Create a Custom Exception Class
+Define a class InvalidMileageException that inherits from std::exception.
+Override the what() function to return a custom error message.
+Modify the mileage tracking process to use this custom exception.
+Step 6: Implement Stack Unwinding
+Create a function calculateMileage() that processes the mileage calculation.
+If an exception occurs, rethrow the exception to be handled at a higher level.
+Demonstrate how stack unwinding works by adding print statements.
+Step 7: Implement Different Exception Handling Techniques
+Terminate the program when an exception occurs in a critical scenario (e.g., division by zero when calculating fuel efficiency).
+Fix the error and continue by asking the user to re-enter correct input.
+Log errors to a file when an exception occurs, while allowing the program to continue running.
+Step 8: Test the Program with Different Inputs
+Run the program multiple times with different mileage values.
+Verify that all exception handling mechanisms work correctly.
+Step 9: Submit Your Work
+Ensure your program is well-commented.
+Save your work using:
+git add .
+git commit -m "Completed Trip Mileage Tracker with Exception Handling"
+git push origin main
+Submit the link to your GitHub repository.
